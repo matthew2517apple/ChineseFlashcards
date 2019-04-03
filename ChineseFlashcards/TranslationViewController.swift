@@ -19,6 +19,7 @@ class TranslationViewController: UIViewController {
     
     let synthesizer = AVSpeechSynthesizer()
     let voice = AVSpeechSynthesisVoice(language: "zh-CN")
+    let englishVoice = AVSpeechSynthesisVoice(language: "en-US")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +34,16 @@ class TranslationViewController: UIViewController {
     @IBAction func readAloudTapped(_ sender: Any) {
         guard let char = char else { return }
         
-        let audio = AVSpeechUtterance(string: char.pinyin)
+        let audio = AVSpeechUtterance(string: char.chineseCharacter)
         audio.voice = voice
+        synthesizer.speak(audio)
+    }
+    
+    @IBAction func readEnglishAloudTapped(_ sender: Any) {
+        guard let english = char?.englishTranslation else { return }
+        
+        let audio = AVSpeechUtterance(string: english)
+        audio.voice = englishVoice
         synthesizer.speak(audio)
     }
 }

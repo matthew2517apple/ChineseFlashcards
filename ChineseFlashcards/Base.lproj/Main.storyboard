@@ -73,28 +73,35 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuA-mD-Hom">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="234.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="209"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIu-WC-eOi">
-                                        <rect key="frame" x="0.0" y="234.5" width="375" height="147.5"/>
+                                        <rect key="frame" x="0.0" y="209" width="375" height="131.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUu-I4-18C">
-                                        <rect key="frame" x="0.0" y="382" width="375" height="147.5"/>
+                                        <rect key="frame" x="0.0" y="340.5" width="375" height="131"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVA-KV-wJK">
-                                        <rect key="frame" x="0.0" y="529.5" width="375" height="73.5"/>
+                                        <rect key="frame" x="0.0" y="471.5" width="375" height="66"/>
                                         <state key="normal" title="Read aloud"/>
                                         <connections>
                                             <action selector="readAloudTapped:" destination="HGQ-Ay-Nu1" eventType="touchUpInside" id="svP-Hj-jzA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFm-2N-B0A">
+                                        <rect key="frame" x="0.0" y="537.5" width="375" height="65.5"/>
+                                        <state key="normal" title="Read English translation aloud"/>
+                                        <connections>
+                                            <action selector="readEnglishAloudTapped:" destination="HGQ-Ay-Nu1" eventType="touchUpInside" id="f7R-7n-gG4"/>
                                         </connections>
                                     </button>
                                 </subviews>
