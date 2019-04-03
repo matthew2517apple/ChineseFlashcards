@@ -33,7 +33,7 @@ class TranslationViewController: UIViewController {
     @IBAction func readAloudTapped(_ sender: Any) {
         guard let char = char else { return }
         
-        let audio = AVSpeechUtterance(string: char.chineseCharacter)
+        let audio = AVSpeechUtterance(string: char.pinyin)
         audio.voice = voice
         synthesizer.speak(audio)
     }
